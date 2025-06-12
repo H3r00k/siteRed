@@ -1,0 +1,277 @@
+/* IMPOSTAZIONI BASE SITO .site-wrapper è un contenitore
+        per salvare la grandezza massima */
+
+.site-wrapper {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+html,
+body {
+    position: relative;
+    z-index: 0;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(/assets/img/back10.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* PERSONALIZZAZIONE NAVBAR E SUBMENU */
+header{
+    z-index: 1;
+    position: relative;
+}
+nav {
+  background-color: black;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  position: relative;
+  flex: 1;
+  text-align: center;
+}
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  margin-top: 8px;
+  left: 0;
+  width: 250px;
+  background-color: white;
+  padding: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  border: 1px solid black;
+  white-space: nowrap;
+  list-style: none;
+  border: 1px solid black;
+}
+
+.submenu li {
+  border-bottom: 1px solid black;
+}
+
+.submenu li:last-child {
+  border-bottom: none;
+}
+
+.submenu li a {
+  color: black;
+
+  padding: 10px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+
+.dropdown {
+  position: relative;
+}
+.dropdown:hover .submenu {
+  display: block;
+}
+
+/* PERSONALIZZAZIONE LOGO */
+
+.brand {
+  display: flex;
+  align-items: center;
+  margin-top: 35px;
+  gap: 40px;
+}
+
+.brand img {
+  width: 80px;
+  height: auto;
+}
+.brand h1 {
+  font-size: 50px;
+  color: white;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* PERSONALIZZAZIONE CARD LUNGHE */
+
+.contrainer-long {
+  display: flex;
+  flex-direction: column;
+  /* gap: 40px; */
+}
+
+.card-long {
+  margin-top: 20px;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid black;
+
+  gap: 30px;
+}
+.card-long h2 {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 24px;
+  white-space: nowrap;
+}
+
+.content-row {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.content-row img {
+  flex: 1;
+  max-width: 100%;
+  height: auto;
+  align-self: center;
+}
+
+.content-row p {
+  margin-top: 30px;
+  font-size: large;
+  padding: 20px;
+}
+
+.content-row-reverse {
+  display: flex;
+}
+
+.content-row-reverse img {
+  flex: 1;
+  max-width: 100%;
+  height: auto;
+  align-self: center;
+}
+
+.content-row-reverse p {
+  margin-top: 30px;
+  font-size: large;
+  padding: 20px;
+}
+
+/* PERSONALIZZAZIONE NOTIZIE CORRELATE */
+
+.container-notizie {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.container-notizie h2 {
+  font-size: 32px;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.grid-card {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card {
+  background-color: yellow;
+  border: 2px solid #000;
+  width: 250px;
+  height: 100%;
+  color: white;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  /* padding-bottom: 10px; */
+  transition: transform 0.3s;
+}
+
+.card img {
+  width: 100%;
+  display: block;
+}
+
+.card-text {
+  background-color: #000;
+  color: white;
+  padding: 10px;
+  font-size: 14px;
+  margin-top: auto;
+  margin: 0;
+}
+
+/* I NOSTRI PARTNERS */
+
+.partners {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.partners h2 {
+  font-size: 42px;
+  color: rgb(104, 104, 104);
+}
+
+.partner-grid-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.card-partner img {
+  max-width: 100%;
+  height: 100px;
+  object-fit: contain;
+}
+
+/* FOOTER PERSONALIZZAZIONE */
+
+footer {
+    
+  background-image: url(/assets/img/back7.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 350px;
+  padding: 40px 20px;
+  color: white;
+  text-align: center;
+}
+
+footer .firma{
+    font-size: 50px;
+    margin-top: 50px;
+}
+
+footer .firma span{
+    color: orangered;
+}
